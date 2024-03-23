@@ -24,9 +24,9 @@ body {
     overflow-x: auto;
     }
     .circle {
-        height: 24px;
-        width: 24px;
-        border-radius: 24px;
+        height: 20px;
+        width: 20px;
+        border-radius: 20px;
         background-color: black;
         position: fixed; 
         top: 0;
@@ -113,4 +113,90 @@ section{
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
     font-size: var(--h3-sz);
     font-weight: 600;
+}
+.About{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.AboutTxt{
+    width: 80%;
+    height: 50%;
+    position: relative;
+    top: 10px;
+    margin: auto;
+    border-bottom: 10px solid;
+    display: flex;
+    flex-direction: column;
+}
+.AboutTxt h1{
+    text-align: center;
+    font-size: var(--h1-sz);
+    font-weight: 600;
+    color: white;
+
+}
+.AboutTxt p{
+    color: white;
+    font-size: var(--h3-sz);
+
+}
+.ImageAbout{
+    background: url("Img/aboutimg-removebg-preview\ \(1\)\ \(1\).png");
+    background-color: var(--bg-clr);
+   width: 100%;
+   height: 100%;
+   background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Accounts{
+    z-index: 5000;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 100px;
+
+}
+
+.Accounts i{
+    font-weight: 600;
+    font-size: var(--h1-sz);
+    border: 2px solid black;
+    border-radius: 10px;
+    background:black;
+    transition: all .5s;
+}
+.Accounts i:hover{
+    background:white;
+    transform: translateY(10px) scale(1.4);
+}
+.bxl-instagram{
+    color: #c40079;
+}
+.bxl-discord-alt{
+    color: blue;
+}.bxl-youtube{
+    color: red;
+}.bxl-github{
+    color: #8206a8;
+}.bxl-tiktok{
+    color: #ff00ee;
+}
+
+.pages{
+    top: 5%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.page1{
+    display: flex;
+    position: relative;
+    text-align: center;
+    padding: 20px 50px;
+    right: 25%;
+
 }
