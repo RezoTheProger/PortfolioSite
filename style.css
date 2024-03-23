@@ -9,7 +9,7 @@
 
 }
 :root{
-    --bg-clr: #5c4e99;
+    --bg-clr: #1d1c22;
     --nav-clr : #8a2000;
     --h1-sz : 2.5rem;
     --h2-sz : 1.5rem;
@@ -18,6 +18,11 @@
 
 
 }
+body {
+    overflow: -moz-scrollbars-horizontal;
+    overflow-y: hidden;
+    overflow-x: auto;
+    }
 header{
     width: 100%;
     height: 100px;
@@ -45,7 +50,36 @@ body{
 section{
     width: 100%;
     height: 100vh;
-    
-    color: beige;
+    background: var(--bg-clr);
     z-index: 5;
+}
+
+.HomePage{
+    height: 80vh;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+.profile-photo{
+    
+    position: relative;
+    top: 25%;
+    border-radius: 50%;
+    border: 5px transparent  ;
+    background:  linear-gradient(90deg, rgba(191,190,218,1) 0%, rgba(177,177,215,1) 46%, rgba(100,166,180,1) 100%)  border-box;
+    box-shadow: 0 0 20px 15px  rgba(100,166,180,1) ;
+
+}
+.txt{
+    width: 50%;
+
+}
+
+.HomePage p{
+    position: relative;
+    
+    color: white;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    font-size: var(--h3-sz);
+    font-weight: 600;
 }
