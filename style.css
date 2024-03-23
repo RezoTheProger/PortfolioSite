@@ -23,6 +23,37 @@ body {
     overflow-y: hidden;
     overflow-x: auto;
     }
+    .circle {
+        height: 24px;
+        width: 24px;
+        border-radius: 24px;
+        background-color: black;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 99999999; 
+        box-shadow: 0 0 15px .5px  rgb(235, 67, 0) ;
+    }
+    @keyframes ClickAnim{
+        0%{
+            transform:scale(1);
+        }
+        50%{
+            transform:scale(3);
+        }
+         100%{
+            transform:scale(1);
+            opacity: 0;
+        }
+    }
+    .expand{
+        height: 15px;
+        width: 15px;
+        animation: ClickAnim .5s forwards;
+        border: 1px solid   #ffb56b;
+    }
+
 header{
     width: 100%;
     height: 100px;
