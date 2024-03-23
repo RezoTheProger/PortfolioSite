@@ -186,6 +186,45 @@ section{
     color: #ff00ee;
 }
 
+
+.experience{
+    width: 100%;
+    height: 70%;
+    position: relative;
+    top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+.column{
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid;
+    border-radius: 15px;
+    transition: all .5s;
+}
+.column:hover{
+    transform: scale(1.1);
+}
+.column i{
+    font-size: 10rem;
+}
+.column h1{
+    font-size: var(--h1-sz);
+    color: #ffb56b;
+    font-weight: 600;
+}
+.column h2{
+    font-size: 9rem;
+    color: blueviolet;
+}
+.column p{
+    color: white;
+    font-weight: 900;
+}
+
 .pages{
     top: 5%;
     position: relative;
