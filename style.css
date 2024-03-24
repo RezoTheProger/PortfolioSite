@@ -223,11 +223,16 @@ section{
     font-weight: 600;
 }
 .column h2{
-    font-size: 9rem;
-    color: blueviolet;
+    
+    font-size: 7.5rem;
 }
 .column p{
     color: white;
     font-weight: 900;
 }
-
+.Csharp{
+    color: darkcyan;
+}
+.php{
+    color: #8206a8;
+}
