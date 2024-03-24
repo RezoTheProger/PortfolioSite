@@ -47,7 +47,7 @@
         left: 0;
         pointer-events: none;
         z-index: 99999999; 
-        box-shadow: 0 0 15px .5px  rgb(235, 67, 0) ;
+        box-shadow: 0 0 800px  10px  rgb(235, 67, 0) ;
     }
     @keyframes ClickAnim{
         0%{
@@ -127,9 +127,9 @@ section{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background: blueviolet;
+    background: rgba(154, 55, 189,.7)  ;
     color: white;
-    box-shadow: 0 0 20px 15px  rgb(167, 0, 228) ;
+    box-shadow: 0 0 20px 15px  rgb(89, 4, 119) ;
     border-radius: 15px;
     margin: auto;
 }
@@ -198,9 +198,30 @@ font-size: 20px;
     font-weight: 600;
     transition: all .5s;
 }
-.btn-submit:hover{
+
+.btn-projects{
+    position: relative;
+    top: 10px;
+    width: 80px;
+    height: 35px;
+    background-color: #fff;
+    border: 2px solid;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    transition: all .5s;
+}
+.btn-submit:hover 
+,.btn-projects:hover{
     
     background-color: #333;
     color: #fff;
 
+}
+.btn-projects h3{
+    text-decoration: line-through;
 }
