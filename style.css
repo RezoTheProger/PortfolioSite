@@ -254,6 +254,7 @@ section{
 .column p{
     color: white;
     font-weight: 900;
+    font-size: 1.2rem;
 }
 .Csharp{
     color: darkcyan;
