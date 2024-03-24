@@ -73,4 +73,21 @@ document.addEventListener('click' ,() =>{
       });
  
 })
-
+const handleOnMouseMove = e => {
+    // Get the current target element from the event object.
+    const target = e.currentTarget;
+  
+    // Get the boundingClientRect of the target element.
+    const rect = target.getBoundingClientRect();
+  
+    // Get the top and left coordinates of the mouse cursor relative to the target element.
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+  
+    // Set the `--mouse-x` and `--mouse-y` CSS custom properties on the target element.
+    target.style.setProperty("--mouse-x", `${x}px`);
+    target.style.setProperty("--mouse-y", `${y}px`);
+  };
+for(const column of document.querySelector('.column')){
+    column.onmousemove = e =>handleOnMouseMove(e);
+}

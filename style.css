@@ -78,8 +78,9 @@ header li{
 
 }
 
+
 header li:hover{
-    transform: translateY(10px) scale(1.2);
+    transform: scale(1.3);
 }
 body{
     background-color: var(--bg-clr);
@@ -122,6 +123,7 @@ section{
 }
 .About{
     position: relative;
+    top: 50px;
     width: 100%;
     height: 100%;
 }
@@ -131,7 +133,9 @@ section{
     position: relative;
     top: 10px;
     margin: auto;
-    border-bottom: 10px solid;
+    border: 5px solid #F14747;
+    border-radius: 15px;
+    box-shadow: 0 0 100px  #F14747;
     display: flex;
     flex-direction: column;
 }
@@ -148,6 +152,7 @@ section{
 
 }
 .ImageAbout{
+    
     background: url("Img/aboutimg-removebg-preview\ \(1\)\ \(1\).png");
     background-color: var(--bg-clr);
    width: 100%;
@@ -155,7 +160,13 @@ section{
    background-repeat: no-repeat;
     background-position: center;
 }
-
+.AboutText{
+    color: burlywood;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-size: var(--h1-sz);
+}
 .Accounts{
     z-index: 5000;
     width: 100%;
@@ -163,7 +174,7 @@ section{
     display: flex;
     justify-content: space-around;
     position: relative;
-    margin-top: 100px;
+    margin-top: 50px;
 
 }
 
@@ -174,6 +185,7 @@ section{
     border-radius: 10px;
     background:black;
     transition: all .5s;
+    cursor: none;
 }
 .Accounts i:hover{
     background:white;
@@ -203,13 +215,31 @@ section{
     gap: 50px;
 }
 .column{
-    background: gray;
+    background: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 5px solid;
     border-radius: 15px;
+
     transition: all .5s;
+}
+.html{
+    box-shadow: 0 0 15px #8a2000;
+
+}
+.css{
+    box-shadow: 0 0 15px #4000ff;
+
+}.js{
+    box-shadow: 0 0 15px #ced806;
+
+}.cSharp{
+    box-shadow: 0 0 15px darkcyan;
+
+}.Php{
+    box-shadow: 0 0 15px #8206a8;
+
 }
 .column:hover{
     transform: scale(1.1);
