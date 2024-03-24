@@ -129,7 +129,7 @@ section{
 }
 .form{
     width: 420px;
-    height: 70vh;
+    height: 110vh;
     position: relative;
     top: 45px;
     display: flex;
@@ -234,12 +234,6 @@ font-size: 20px;
 .btn-projects h3{
     text-decoration: line-through;
 }
-@media (max-width: 1075px){
-   .form{
-    width: 420px;
-    height: 110vh;
-   }
-    }
 @media (max-width: 800px){
    
     .pages p{
