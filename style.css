@@ -174,7 +174,7 @@ section{
 
 .Accounts i{
     font-weight: 600;
-    font-size: var(--h1-sz);
+    font-size:3rem;
     border: 2px solid black;
     border-radius: 10px;
     background:black;
@@ -259,4 +259,98 @@ section{
 }
 .php{
     color: #8206a8;
+}
+.body3{
+    overflow-y: visible;
+}
+
+@media (max-width: 1400px){
+    :root{
+        --h1-sz : 2rem;
+    }
+    .column{
+
+        padding: 0px 5px;
+    }
+   
+    
+    .column h2{
+        
+        font-size: 6rem;
+    }
+    .column p{
+        color: white;
+        font-weight: 900;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 1200px ){
+    :root{
+        --h1-sz : 1.5rem;
+        --h3-sz:1rem;
+    }
+   
+    .column{
+
+        padding: 0px 5px;
+    }
+   
+    
+    .column h2{
+        
+        font-size: 5rem;
+    }
+    .column p{
+        color: white;
+        font-weight: 900;
+        font-size: .8rem;
+    }
+    .AboutTxt p{
+        font-size: .9rem;
+    }
+}
+@media (max-width: 1000px){
+    .experience{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+
+    }
+   
+    .column:hover{
+        transform: scale(1.05);
+
+    }
+}
+@media (max-width: 800px){
+.experience{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 40px;
+
+}
+.AboutTxt p{
+    font-size: .7rem;
+}
+
+}
+
+@media(max-width:500px){
+    .HomePage{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .txt{
+        position: relative;
+        top: 150px;
+    }
+    .AboutTxt p{
+        font-size: .6rem;
+    }
+}
+@media(max-width: 340px){
+    .AboutTxt p{
+        font-size: .5rem;
+    }
 }

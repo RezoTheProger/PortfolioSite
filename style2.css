@@ -14,7 +14,7 @@
     --h1-sz : 2.5rem;
     --h2-sz : 1.5rem;
     --h3-sz : 1.2rem;
-    --p-sz : .7rem;
+    --p-sz : .8rem;
 
 
 }
@@ -29,7 +29,7 @@
         cursor: none;
         overflow: -moz-scrollbars-horizontal;
         overflow-x: hidden;
-        overflow-y: hidden;
+        overflow-y: visible;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -117,6 +117,15 @@ section{
     flex-wrap: nowrap;
     border-bottom: 5px solid rgb(55, 9, 9);
     border-radius: 15px;
+}
+.pages h1{
+    color: white;
+
+}
+.pages p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
 }
 .form{
     width: 420px;
@@ -225,3 +234,45 @@ font-size: 20px;
 .btn-projects h3{
     text-decoration: line-through;
 }
+@media (max-width: 1075px){
+   .form{
+    width: 420px;
+    height: 110vh;
+   }
+    }
+@media (max-width: 800px){
+   
+    .pages p{
+      
+        font-size: var(--p-sz);
+      
+    }
+    }
+    @media (max-width: 800px){
+   
+        .pages p{
+          
+            font-size: var(--p-sz);
+          
+        }
+        }
+        @media (max-width: 600px){
+   
+            .pages p{
+              
+                font-size: .7rem;
+              
+            }
+            }
+            @media (max-width: 400px){
+   
+                .pages p{
+                  
+                    font-size: .5rem;
+                  
+                }
+                .btn-projects{
+                    width: 60px;
+                    height: 20px;
+                }
+                }
