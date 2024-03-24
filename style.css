@@ -254,7 +254,7 @@ section{
 .column p{
     color: white;
     font-weight: 900;
-    font-size: 1.2rem;
+    font-size: .9rem;
 }
 .Csharp{
     color: darkcyan;
@@ -283,7 +283,7 @@ section{
     .column p{
         color: white;
         font-weight: 900;
-        font-size: 1rem;
+        font-size: .9rem;
     }
 }
 @media (max-width: 1200px ){
