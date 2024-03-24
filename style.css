@@ -231,17 +231,3 @@ section{
     font-weight: 900;
 }
 
-.pages{
-    top: 5%;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-.page1{
-    display: flex;
-    position: relative;
-    text-align: center;
-    padding: 20px 50px;
-    right: 25%;
-
-}
