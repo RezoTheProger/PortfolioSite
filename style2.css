@@ -242,14 +242,6 @@ font-size: 20px;
       
     }
     }
-    @media (max-width: 800px){
-   
-        .pages p{
-          
-            font-size: var(--p-sz);
-          
-        }
-        }
         @media (max-width: 600px){
    
             .pages p{
@@ -258,8 +250,10 @@ font-size: 20px;
               
             }
             }
-            @media (max-width: 400px){
-   
+            @media (max-width: 480px){
+                .circle {
+                    height: 0px;
+                    width: 0px;}
                 .pages p{
                   
                     font-size: .5rem;
