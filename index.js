@@ -1,6 +1,6 @@
 const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
-
+document.addEventListener('contextmenu', event => event.preventDefault());
 const colors = [
   "#ffb56b",
   "#fdaf69",
